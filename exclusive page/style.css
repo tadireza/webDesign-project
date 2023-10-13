@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%)
+
+}
+
+@keyframes example {
+    from {background-color: #fff}
+    to {background-color: rgb(4, 4, 4);}
+    
+}
+
+.wrapper .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    overflow: hidden; 
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover{
+   
+    animation-name: example;
+    animation-direction: reverse;
+  animation-duration: 0.8s;
+}
+
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+
+.wrapper .button .icon .i{
+    font-size: 25px;
+    line-height: 60px;
+}
+
+.wrapper .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+}
